@@ -42,7 +42,9 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
 
   Future<void> setupInitialData() async {
     final response = await http.get(Uri.parse('$beUrl/api/public/order/${widget.uid}'));
-    if (response.statusCode == 200) {
+    print("ini masuk");
+    if (response.statusCode == 200 && widget.uid.isNotEmpty) {
+      print('masuk');
       var bodyResponse = json.decode(response.body);
       final data = bodyResponse['data'];
       setState(() {
@@ -79,7 +81,7 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
 
       });
     } else {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => const NotFound()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const NotFound()));
     }
   }
 
