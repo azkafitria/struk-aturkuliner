@@ -1,0 +1,714 @@
+{
+  "success": true,
+  "message": "Data berhasil diambil.",
+  "data": {
+    "uid": "d5099a4f-2682-43e3-81a8-3481a1254130",
+    "tanggal": "2022-10-06 13:54:19",
+    "no_transaksi": "MUM/2210/0002",
+    "order_number": "GF-382",
+    "nama_penanggung_jawab": "Hubster",
+    "catatan": "Do not include cutlery 不需要餐具",
+    "total_harga_jual": "111860.0000000000",
+    "discount_type": "flat",
+    "discount": "50151.00",
+    "additional_fee": "11000.0000000000",
+    "service_charge": "0.00",
+    "service_charge_percentage": "0",
+    "tax": "0.00",
+    "status": "1",
+    "status_text": "Berhasil",
+    "status_color": "00b300",
+    "created_at": "2022-10-06T17:00:06.000000Z",
+    "created_by": null,
+    "cabang": {
+      "uid": "4494cba0-bdc4-47c5-972f-ae2b2a565c0e",
+      "nama": "Cabang Utama",
+      "alamat": "Jalan Maulana Yusuf No.2 Bandung"
+    },
+    "sales_channel": {
+      "uid": "b8280126-8191-4b5b-9ad1-51633e93b7bf",
+      "nama": "GrabFood"
+    },
+    "customer": {
+      "uid": "0adfb1c1-13d1-442a-9677-75f40a55f832",
+      "name": "-",
+      "phone_number": "1665075606235"
+    },
+    "detail": [
+      {
+        "uid": "aff80b65-401e-4938-bba6-2c103b19486b",
+        "qty": "1.00",
+        "harga_jual": "59360.00",
+        "notes": "Disatukan kak. Terima kasih",
+        "created_at": "2022-10-06T17:00:06.000000Z",
+        "created_by": null,
+        "menu": {
+          "uid": "b34938e1-7a97-4c74-8383-1928388c0205",
+          "nama": "Chicken Salad Wrap"
+        },
+        "detail_item": [
+          {
+            "uid": "a257bf57-f9a5-4e9a-9937-030a7a56360a",
+            "bahan_baku_uid": "ee40cc94-385d-4a64-aa25-36cc5a72dc52",
+            "barang_jadi_uid": null,
+            "item_kode": "1100016",
+            "item_nama": "Ranch (Dressing)",
+            "satuan": {
+              "nama": "Mililiter"
+            },
+            "harga": "43.1900000000",
+            "qty": "60.00000"
+          },
+          {
+            "uid": "cf735156-c963-41f0-b891-dc1c4c7ebecf",
+            "bahan_baku_uid": "a7de6d8a-6da0-4e19-a793-da43b616fed6",
+            "barang_jadi_uid": null,
+            "item_kode": "1500002",
+            "item_nama": "Dressing Cup (S)",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "335.0000000000",
+            "qty": 2
+          },
+          {
+            "uid": "d7c8786c-31b1-452f-b2e7-240753116be7",
+            "bahan_baku_uid": "f13a08ec-3f7d-47d9-a9aa-4a860865bb1b",
+            "barang_jadi_uid": null,
+            "item_kode": "1100001",
+            "item_nama": "Greens",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "47.1428570000",
+            "qty": 180
+          },
+          {
+            "uid": "38180c0c-c95f-469c-be75-239cc44d57d1",
+            "bahan_baku_uid": "64ea2b1b-095f-4cf1-a63e-d9abfd0e01e8",
+            "barang_jadi_uid": null,
+            "item_kode": "1100002",
+            "item_nama": "Carrot",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "20.0000000000",
+            "qty": 30
+          },
+          {
+            "uid": "cc57ff49-e8e5-434d-8999-f96b0b6e9322",
+            "bahan_baku_uid": "da1c40f7-5e93-4699-8c4a-4533e2533b1a",
+            "barang_jadi_uid": null,
+            "item_kode": "1100003",
+            "item_nama": "Red Cabbage",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "47.0588240000",
+            "qty": 30
+          },
+          {
+            "uid": "03e90fd1-113c-4a9c-ae88-8fce453e93b3",
+            "bahan_baku_uid": "380504a8-f6d2-48b6-9e85-80243c0fb927",
+            "barang_jadi_uid": null,
+            "item_kode": "1100004",
+            "item_nama": "Mushroom",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "76.4705880000",
+            "qty": 20
+          },
+          {
+            "uid": "6ee44fac-8a4e-495f-9ddb-c9cfd08517fe",
+            "bahan_baku_uid": "03ab107b-416c-4f4c-a7f3-decbf0f9fe55",
+            "barang_jadi_uid": null,
+            "item_kode": "1100005",
+            "item_nama": "Cranberry",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "131.0000000000",
+            "qty": 20
+          },
+          {
+            "uid": "06671297-16c1-48a9-9153-964974d80fe2",
+            "bahan_baku_uid": "db2b4f04-d058-4cf9-9c80-50756390faad",
+            "barang_jadi_uid": null,
+            "item_kode": "1100006",
+            "item_nama": "Cherry Tomato",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "12.0000000000",
+            "qty": 30
+          },
+          {
+            "uid": "5c4e8c67-63b4-42f4-bfe7-e33c40200e4e",
+            "bahan_baku_uid": "6817897e-e017-4997-a883-175090cbbd71",
+            "barang_jadi_uid": null,
+            "item_kode": "1100007",
+            "item_nama": "Egg",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "1900.0000000000",
+            "qty": "0.50000"
+          },
+          {
+            "uid": "45dfeadf-fe27-4f1f-8a46-7b1b8ac50c4b",
+            "bahan_baku_uid": "f6649ddf-b24e-4dc2-a623-f780e20c7690",
+            "barang_jadi_uid": null,
+            "item_kode": "1100008",
+            "item_nama": "Corn",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "17.0000000000",
+            "qty": 20
+          },
+          {
+            "uid": "c13b0b82-3e96-40dd-9e4c-eee48e2fc506",
+            "bahan_baku_uid": "8b33eaee-6eed-4726-b850-4ad99517426f",
+            "barang_jadi_uid": null,
+            "item_kode": "1100009",
+            "item_nama": "Croutons",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "49.0000000000",
+            "qty": 20
+          },
+          {
+            "uid": "bd0607e0-dbb3-44eb-a50a-815d4d78817f",
+            "bahan_baku_uid": "9485dc05-af4b-4a43-9ad5-8fa309b7348a",
+            "barang_jadi_uid": null,
+            "item_kode": "1200001",
+            "item_nama": "Chicken",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "66.1764710000",
+            "qty": "45.00000"
+          },
+          {
+            "uid": "6c17b070-68ba-4e55-8e84-f5d63d06a0e7",
+            "bahan_baku_uid": "fdf79d5b-b3f0-4ac9-a7e0-980146b8e9f8",
+            "barang_jadi_uid": null,
+            "item_kode": "1200005",
+            "item_nama": "Tortilla",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "1719.0000000000",
+            "qty": 4
+          },
+          {
+            "uid": "cbb9c64d-609e-48aa-850b-ba3761871202",
+            "bahan_baku_uid": "b96c1619-5cbf-4723-88e0-d2de26202807",
+            "barang_jadi_uid": null,
+            "item_kode": "1500001",
+            "item_nama": "Thin Wall",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "1070.0000000000",
+            "qty": 2
+          },
+          {
+            "uid": "82d6c684-27b8-4c21-bf12-ae43050771ac",
+            "bahan_baku_uid": "dc148030-5dc2-4cee-8b73-e1a31302faae",
+            "barang_jadi_uid": null,
+            "item_kode": "1500006",
+            "item_nama": "Cable Ties",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "40.0000000000",
+            "qty": 2
+          },
+          {
+            "uid": "cacc9d25-7126-4a10-97b3-900cdc1a854b",
+            "bahan_baku_uid": "e3ba6831-2b1c-4e2e-925e-90e95d796132",
+            "barang_jadi_uid": null,
+            "item_kode": "1500007",
+            "item_nama": "Hand Glove",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "80.0000000000",
+            "qty": 4
+          }
+        ],
+        "detail_varian": [
+          {
+            "uid": "19d37bc8-a256-40d7-9f1e-fe4cb0153a08",
+            "harga_jual": "0.0000000000",
+            "varian": {
+              "nama": "Ranch (American Creamy)"
+            }
+          },
+          {
+            "uid": "df5f487c-9778-4fca-bb82-dedfdf306c49",
+            "harga_jual": "0.0000000000",
+            "varian": {
+              "nama": "Disatukan"
+            }
+          }
+        ]
+      },
+      {
+        "uid": "3317cc05-4105-4c65-8cb5-b4743e3fb326",
+        "qty": "1.00",
+        "harga_jual": "52500.00",
+        "notes": "Disatukan kak. Terima kasih",
+        "created_at": "2022-10-06T17:00:06.000000Z",
+        "created_by": null,
+        "menu": {
+          "uid": "f8f164d5-26c0-4c06-b669-7dc16b9f1128",
+          "nama": "Vegan Salad Wrap"
+        },
+        "detail_item": [
+          {
+            "uid": "73df94ea-5040-48a3-a743-edb2a4b474c9",
+            "bahan_baku_uid": "78ad8a49-980c-4a08-82d2-f4d2c2492a13",
+            "barang_jadi_uid": null,
+            "item_kode": "1100015",
+            "item_nama": "Cordini (Dressing)",
+            "satuan": {
+              "nama": "Mililiter"
+            },
+            "harga": "43.8900000000",
+            "qty": "60.00000"
+          },
+          {
+            "uid": "990f59ab-8dc2-442e-baf3-216bb038ccbd",
+            "bahan_baku_uid": "a7de6d8a-6da0-4e19-a793-da43b616fed6",
+            "barang_jadi_uid": null,
+            "item_kode": "1500002",
+            "item_nama": "Dressing Cup (S)",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "335.0000000000",
+            "qty": "1.00000"
+          },
+          {
+            "uid": "4261e71b-d79c-49d8-bb4d-c6bd399aecc3",
+            "bahan_baku_uid": "f13a08ec-3f7d-47d9-a9aa-4a860865bb1b",
+            "barang_jadi_uid": null,
+            "item_kode": "1100001",
+            "item_nama": "Greens",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "47.1428570000",
+            "qty": "90.00000"
+          },
+          {
+            "uid": "e16b096d-193c-49f4-8f29-ed276991baab",
+            "bahan_baku_uid": "64ea2b1b-095f-4cf1-a63e-d9abfd0e01e8",
+            "barang_jadi_uid": null,
+            "item_kode": "1100002",
+            "item_nama": "Carrot",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "20.0000000000",
+            "qty": "15.00000"
+          },
+          {
+            "uid": "e347d33d-18a3-4efe-81fd-96f8378c5dc4",
+            "bahan_baku_uid": "da1c40f7-5e93-4699-8c4a-4533e2533b1a",
+            "barang_jadi_uid": null,
+            "item_kode": "1100003",
+            "item_nama": "Red Cabbage",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "47.0588240000",
+            "qty": "15.00000"
+          },
+          {
+            "uid": "559c2c4f-27b5-4ad2-80e6-e50805018e81",
+            "bahan_baku_uid": "380504a8-f6d2-48b6-9e85-80243c0fb927",
+            "barang_jadi_uid": null,
+            "item_kode": "1100004",
+            "item_nama": "Mushroom",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "76.4705880000",
+            "qty": "10.00000"
+          },
+          {
+            "uid": "7aacaaf7-a7d2-4b46-a436-aac15f796e2b",
+            "bahan_baku_uid": "03ab107b-416c-4f4c-a7f3-decbf0f9fe55",
+            "barang_jadi_uid": null,
+            "item_kode": "1100005",
+            "item_nama": "Cranberry",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "131.0000000000",
+            "qty": "10.00000"
+          },
+          {
+            "uid": "7f59d70b-e429-4481-9ac8-131f711769be",
+            "bahan_baku_uid": "db2b4f04-d058-4cf9-9c80-50756390faad",
+            "barang_jadi_uid": null,
+            "item_kode": "1100006",
+            "item_nama": "Cherry Tomato",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "12.0000000000",
+            "qty": "15.00000"
+          },
+          {
+            "uid": "f10eedff-cb4f-4912-9ded-341899f70dd5",
+            "bahan_baku_uid": "f6649ddf-b24e-4dc2-a623-f780e20c7690",
+            "barang_jadi_uid": null,
+            "item_kode": "1100008",
+            "item_nama": "Corn",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "17.0000000000",
+            "qty": "10.00000"
+          },
+          {
+            "uid": "de135b8b-cc11-489e-976c-a8b82a448637",
+            "bahan_baku_uid": "8b33eaee-6eed-4726-b850-4ad99517426f",
+            "barang_jadi_uid": null,
+            "item_kode": "1100009",
+            "item_nama": "Croutons",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "49.0000000000",
+            "qty": "10.00000"
+          },
+          {
+            "uid": "eeafee4c-7bd2-4d7a-b805-fa82373f359f",
+            "bahan_baku_uid": "982932bf-1e20-4540-8ec3-aa98534607a2",
+            "barang_jadi_uid": null,
+            "item_kode": "1100010",
+            "item_nama": "Tofu",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "17.3913040000",
+            "qty": "22.50000"
+          },
+          {
+            "uid": "c95c3a9a-4eb6-4dd7-9bba-61297e08df94",
+            "bahan_baku_uid": "0198add3-8329-4737-ad13-96c09156b2fb",
+            "barang_jadi_uid": null,
+            "item_kode": "1100011",
+            "item_nama": "Tempeh",
+            "satuan": {
+              "nama": "Gram"
+            },
+            "harga": "25.3333330000",
+            "qty": "22.50000"
+          },
+          {
+            "uid": "55d712cb-2e7a-4735-a610-73bdc6ad193a",
+            "bahan_baku_uid": "fdf79d5b-b3f0-4ac9-a7e0-980146b8e9f8",
+            "barang_jadi_uid": null,
+            "item_kode": "1200005",
+            "item_nama": "Tortilla",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "1719.0000000000",
+            "qty": "2.00000"
+          },
+          {
+            "uid": "63f2d158-6051-4673-a896-1d13a328cc47",
+            "bahan_baku_uid": "b96c1619-5cbf-4723-88e0-d2de26202807",
+            "barang_jadi_uid": null,
+            "item_kode": "1500001",
+            "item_nama": "Thin Wall",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "1070.0000000000",
+            "qty": "1.00000"
+          },
+          {
+            "uid": "fdcc495a-6eab-4233-b4ee-217171f0dc1e",
+            "bahan_baku_uid": "dc148030-5dc2-4cee-8b73-e1a31302faae",
+            "barang_jadi_uid": null,
+            "item_kode": "1500006",
+            "item_nama": "Cable Ties",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "40.0000000000",
+            "qty": "1.00000"
+          },
+          {
+            "uid": "7e02f154-d373-4640-aa30-0f841bb71e12",
+            "bahan_baku_uid": "e3ba6831-2b1c-4e2e-925e-90e95d796132",
+            "barang_jadi_uid": null,
+            "item_kode": "1500007",
+            "item_nama": "Hand Glove",
+            "satuan": {
+              "nama": "Pieces"
+            },
+            "harga": "80.0000000000",
+            "qty": "2.00000"
+          }
+        ],
+        "detail_varian": [
+          {
+            "uid": "10129720-8954-4b29-9660-73a77009da33",
+            "harga_jual": "0.0000000000",
+            "varian": {
+              "nama": "Cordini (Caesar)"
+            }
+          },
+          {
+            "uid": "600afba4-ee01-4b8e-aeb0-0644a6d076a1",
+            "harga_jual": "0.0000000000",
+            "varian": {
+              "nama": "Disatukan"
+            }
+          }
+        ]
+      }
+    ],
+    "detail_item": [
+      {
+        "uid": "a257bf57-f9a5-4e9a-9937-030a7a56360a",
+        "bahan_baku_uid": "ee40cc94-385d-4a64-aa25-36cc5a72dc52",
+        "barang_jadi_uid": null,
+        "item_kode": "1100016",
+        "item_nama": "Ranch (Dressing)",
+        "satuan": {
+          "nama": "Mililiter"
+        },
+        "harga": "43.1900000000",
+        "qty": "60.00000"
+      },
+      {
+        "uid": "cf735156-c963-41f0-b891-dc1c4c7ebecf",
+        "bahan_baku_uid": "a7de6d8a-6da0-4e19-a793-da43b616fed6",
+        "barang_jadi_uid": null,
+        "item_kode": "1500002",
+        "item_nama": "Dressing Cup (S)",
+        "satuan": {
+          "nama": "Pieces"
+        },
+        "harga": "335.0000000000",
+        "qty": 2
+      },
+      {
+        "uid": "d7c8786c-31b1-452f-b2e7-240753116be7",
+        "bahan_baku_uid": "f13a08ec-3f7d-47d9-a9aa-4a860865bb1b",
+        "barang_jadi_uid": null,
+        "item_kode": "1100001",
+        "item_nama": "Greens",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "47.1428570000",
+        "qty": 180
+      },
+      {
+        "uid": "38180c0c-c95f-469c-be75-239cc44d57d1",
+        "bahan_baku_uid": "64ea2b1b-095f-4cf1-a63e-d9abfd0e01e8",
+        "barang_jadi_uid": null,
+        "item_kode": "1100002",
+        "item_nama": "Carrot",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "20.0000000000",
+        "qty": 30
+      },
+      {
+        "uid": "cc57ff49-e8e5-434d-8999-f96b0b6e9322",
+        "bahan_baku_uid": "da1c40f7-5e93-4699-8c4a-4533e2533b1a",
+        "barang_jadi_uid": null,
+        "item_kode": "1100003",
+        "item_nama": "Red Cabbage",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "47.0588240000",
+        "qty": 30
+      },
+      {
+        "uid": "03e90fd1-113c-4a9c-ae88-8fce453e93b3",
+        "bahan_baku_uid": "380504a8-f6d2-48b6-9e85-80243c0fb927",
+        "barang_jadi_uid": null,
+        "item_kode": "1100004",
+        "item_nama": "Mushroom",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "76.4705880000",
+        "qty": 20
+      },
+      {
+        "uid": "6ee44fac-8a4e-495f-9ddb-c9cfd08517fe",
+        "bahan_baku_uid": "03ab107b-416c-4f4c-a7f3-decbf0f9fe55",
+        "barang_jadi_uid": null,
+        "item_kode": "1100005",
+        "item_nama": "Cranberry",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "131.0000000000",
+        "qty": 20
+      },
+      {
+        "uid": "06671297-16c1-48a9-9153-964974d80fe2",
+        "bahan_baku_uid": "db2b4f04-d058-4cf9-9c80-50756390faad",
+        "barang_jadi_uid": null,
+        "item_kode": "1100006",
+        "item_nama": "Cherry Tomato",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "12.0000000000",
+        "qty": 30
+      },
+      {
+        "uid": "5c4e8c67-63b4-42f4-bfe7-e33c40200e4e",
+        "bahan_baku_uid": "6817897e-e017-4997-a883-175090cbbd71",
+        "barang_jadi_uid": null,
+        "item_kode": "1100007",
+        "item_nama": "Egg",
+        "satuan": {
+          "nama": "Pieces"
+        },
+        "harga": "1900.0000000000",
+        "qty": "0.50000"
+      },
+      {
+        "uid": "45dfeadf-fe27-4f1f-8a46-7b1b8ac50c4b",
+        "bahan_baku_uid": "f6649ddf-b24e-4dc2-a623-f780e20c7690",
+        "barang_jadi_uid": null,
+        "item_kode": "1100008",
+        "item_nama": "Corn",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "17.0000000000",
+        "qty": 20
+      },
+      {
+        "uid": "c13b0b82-3e96-40dd-9e4c-eee48e2fc506",
+        "bahan_baku_uid": "8b33eaee-6eed-4726-b850-4ad99517426f",
+        "barang_jadi_uid": null,
+        "item_kode": "1100009",
+        "item_nama": "Croutons",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "49.0000000000",
+        "qty": 20
+      },
+      {
+        "uid": "bd0607e0-dbb3-44eb-a50a-815d4d78817f",
+        "bahan_baku_uid": "9485dc05-af4b-4a43-9ad5-8fa309b7348a",
+        "barang_jadi_uid": null,
+        "item_kode": "1200001",
+        "item_nama": "Chicken",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "66.1764710000",
+        "qty": "45.00000"
+      },
+      {
+        "uid": "6c17b070-68ba-4e55-8e84-f5d63d06a0e7",
+        "bahan_baku_uid": "fdf79d5b-b3f0-4ac9-a7e0-980146b8e9f8",
+        "barang_jadi_uid": null,
+        "item_kode": "1200005",
+        "item_nama": "Tortilla",
+        "satuan": {
+          "nama": "Pieces"
+        },
+        "harga": "1719.0000000000",
+        "qty": 4
+      },
+      {
+        "uid": "cbb9c64d-609e-48aa-850b-ba3761871202",
+        "bahan_baku_uid": "b96c1619-5cbf-4723-88e0-d2de26202807",
+        "barang_jadi_uid": null,
+        "item_kode": "1500001",
+        "item_nama": "Thin Wall",
+        "satuan": {
+          "nama": "Pieces"
+        },
+        "harga": "1070.0000000000",
+        "qty": 2
+      },
+      {
+        "uid": "82d6c684-27b8-4c21-bf12-ae43050771ac",
+        "bahan_baku_uid": "dc148030-5dc2-4cee-8b73-e1a31302faae",
+        "barang_jadi_uid": null,
+        "item_kode": "1500006",
+        "item_nama": "Cable Ties",
+        "satuan": {
+          "nama": "Pieces"
+        },
+        "harga": "40.0000000000",
+        "qty": 2
+      },
+      {
+        "uid": "cacc9d25-7126-4a10-97b3-900cdc1a854b",
+        "bahan_baku_uid": "e3ba6831-2b1c-4e2e-925e-90e95d796132",
+        "barang_jadi_uid": null,
+        "item_kode": "1500007",
+        "item_nama": "Hand Glove",
+        "satuan": {
+          "nama": "Pieces"
+        },
+        "harga": "80.0000000000",
+        "qty": 4
+      },
+      {
+        "uid": "73df94ea-5040-48a3-a743-edb2a4b474c9",
+        "bahan_baku_uid": "78ad8a49-980c-4a08-82d2-f4d2c2492a13",
+        "barang_jadi_uid": null,
+        "item_kode": "1100015",
+        "item_nama": "Cordini (Dressing)",
+        "satuan": {
+          "nama": "Mililiter"
+        },
+        "harga": "43.8900000000",
+        "qty": "60.00000"
+      },
+      {
+        "uid": "eeafee4c-7bd2-4d7a-b805-fa82373f359f",
+        "bahan_baku_uid": "982932bf-1e20-4540-8ec3-aa98534607a2",
+        "barang_jadi_uid": null,
+        "item_kode": "1100010",
+        "item_nama": "Tofu",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "17.3913040000",
+        "qty": "22.50000"
+      },
+      {
+        "uid": "c95c3a9a-4eb6-4dd7-9bba-61297e08df94",
+        "bahan_baku_uid": "0198add3-8329-4737-ad13-96c09156b2fb",
+        "barang_jadi_uid": null,
+        "item_kode": "1100011",
+        "item_nama": "Tempeh",
+        "satuan": {
+          "nama": "Gram"
+        },
+        "harga": "25.3333330000",
+        "qty": "22.50000"
+      }
+    ]
+  }
+}
