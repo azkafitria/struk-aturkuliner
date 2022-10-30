@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'package:order_receipt/models/product.dart';
 import 'package:order_receipt/commons/commons.dart';
+import 'package:order_receipt/models/product.dart';
 import 'package:order_receipt/models/varian.dart';
 import 'package:order_receipt/widgets/not_found.dart';
 import 'package:order_receipt/widgets/order_receipt_item_list.dart';
@@ -39,12 +38,11 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
   String serviceCharge = '';
   String discount = '';
   String additionalfee = '';
+  bool notFound = false;
 
   Future<void> setupInitialData() async {
     final response = await http.get(Uri.parse('$beUrl/api/public/order/${widget.uid}'));
-    print("ini masuk");
     if (response.statusCode == 200 && widget.uid.isNotEmpty) {
-      print('masuk');
       var bodyResponse = json.decode(response.body);
       final data = bodyResponse['data'];
       setState(() {
@@ -78,10 +76,11 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
         serviceCharge = formatPrice(data['service_charge']);
         tax = formatPrice(data['tax']);
         total = formatPrice(data['total_harga_jual']);
-
       });
     } else {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const NotFound()));
+      setState(() {
+        notFound = true;
+      });
     }
   }
 
@@ -93,6 +92,7 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
 
   @override
   Widget build(BuildContext context) {
+    if (notFound) return const NotFound();
     return Scaffold(
       body: Center(
         child: Container(
@@ -110,40 +110,41 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  logoMitraUrl != '' ?
-                                    Container(
-                                      alignment: Alignment.centerLeft,
-                                      child: Container(
-                                        width: 50.0,
-                                        height: 50.0,
-                                        decoration: BoxDecoration(
-                                            image: DecorationImage(image: NetworkImage(logoMitraUrl), fit: BoxFit.cover)
-                                        ),
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                logoMitraUrl != '' ?
+                                  Container(
+                                    alignment: Alignment.centerLeft,
+                                    child: Container(
+                                      width: 50.0,
+                                      height: 50.0,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(image: NetworkImage(logoMitraUrl), fit: BoxFit.cover)
                                       ),
-                                    ) : const SizedBox(),
-                                  logoMitraUrl != '' ? const SizedBox(width: 15) : const SizedBox(),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(namaMitra),
-                                      const SizedBox(height: 5),
-                                      Text(
-                                        tanggal,
-                                        style: const TextStyle(
-                                          color: Colors.grey,
-                                        ),
+                                    ),
+                                  ) : const SizedBox(),
+                                logoMitraUrl != '' ? const SizedBox(width: 15) : const SizedBox(),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(namaMitra),
+                                    const SizedBox(height: 5),
+                                    Text(
+                                      tanggal,
+                                      style: const TextStyle(
+                                        color: Colors.grey,
                                       ),
+                                    ),
                                   ],
                                 )
-                              ])
-                            ],
-                          )
+                              ]
+                            )
+                          ],
+                        )
                       ),
                     ],
                   ),
@@ -157,51 +158,51 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
                         width: double.infinity,
                         padding: const EdgeInsets.all(15.0),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.white
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white
                         ),
                         child: Column(
                           children: [
                             OrderReceiptItemList(title: 'Tanggal', value: tanggal),
                             OrderReceiptItemList(title: 'Nomor Bon', value: noBon),
-                            OrderReceiptItemList(title: 'Nama Pelanggan', value: namaPelanggan??'-'),
+                            OrderReceiptItemList(title: 'Nama Pelanggan', value: namaPelanggan),
                             OrderReceiptItemList(title: 'Nama Kasir', value: namaKasir),
                             const DottedDivider(),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                                    child: Text(jenisOrder)
+                                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                                  child: Text(jenisOrder)
                                 ),
                               ],
                             ),
                             const DottedDivider(),
                             Column(
                               children: daftarProduk.map((produk) => Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Expanded(
-                                              flex: 1,
-                                              child: Text(produk.qty + 'x')
-                                          ),
-                                          Expanded(
-                                              flex: 5,
-                                              child: Text(produk.name)
-                                          ),
-                                          Expanded(
-                                              flex: 2,
-                                              child: Align(
-                                                alignment: Alignment.centerRight,
-                                                child: Text(produk.price),
-                                              )
-                                          ),
-                                        ],
-                                      )
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Expanded(
+                                          flex: 1,
+                                          child: Text(produk.qty + 'x')
+                                        ),
+                                        Expanded(
+                                          flex: 5,
+                                          child: Text(produk.name)
+                                        ),
+                                        Expanded(
+                                          flex: 2,
+                                          child: Align(
+                                            alignment: Alignment.centerRight,
+                                            child: Text(produk.price),
+                                          )
+                                        ),
+                                      ],
+                                    )
                                   ),
                                   produk.varian.length > 0 ? Column(
                                     children: <Widget>[
@@ -226,15 +227,16 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
                                                 child: Align(
                                                   alignment: Alignment.centerRight,
                                                   child: Text(
-                                                      produk.varian[i].harga,
+                                                    produk.varian[i].harga,
                                                   ),
                                                 )
                                               ),
                                             ],
                                           )
-                                      ),
+                                        ),
                                     ]
-                                  ) : const SizedBox()
+                                  )
+                                  : const SizedBox()
                                 ]
                               )).toList(),
                             ),
@@ -250,8 +252,18 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const Text('Total: '),
-                                  Text(total),
+                                  const Text(
+                                    'Total: ',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    total,
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -263,8 +275,8 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
                         width: double.infinity,
                         padding: const EdgeInsets.all(15.0),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.white
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -272,7 +284,7 @@ class OrderReceiptPageState extends State<OrderReceiptPage> {
                             const Text(
                               'Kunjungi Kami Di',
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold
+                                fontWeight: FontWeight.bold
                               ),
                             ),
                             const SizedBox(height: 5),

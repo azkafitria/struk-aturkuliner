@@ -1,43 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:fluro/fluro.dart';
-import 'package:url_strategy/url_strategy.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 
-import 'package:order_receipt/config/application.dart';
-import 'package:order_receipt/config/routes.dart';
+import 'package:order_receipt/config/router.dart';
 
 void main() {
-  setPathUrlStrategy();
-  runApp(const AppComponent());
+  usePathUrlStrategy();
+  runApp(const App());
 }
 
-class AppComponent extends StatefulWidget {
-  const AppComponent({super.key});
-
-  @override
-  State createState() {
-    return AppComponentState();
-  }
-}
-
-class AppComponentState extends State<AppComponent> {
-  AppComponentState() {
-    final router = FluroRouter();
-    Routes.configureRoutes(router);
-    Application.router = router;
-  }
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final app = MaterialApp(
-      title: 'Struk',
-      debugShowCheckedModeBanner: false,
+    return MaterialApp.router(
+      title: "Struk",
+      routerConfig: router,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         textTheme: GoogleFonts.latoTextTheme(),
       ),
-      onGenerateRoute: Application.router.generator,
+      debugShowCheckedModeBanner: false,
     );
-    return app;
   }
 }

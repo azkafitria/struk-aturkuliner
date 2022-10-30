@@ -14,11 +14,11 @@ class NotFound extends StatelessWidget {
               children: [
                 Image.asset('not_found.png'),
                 const Text(
-                    'Data Struk Tidak Ditemukan',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                    ),
+                  'Data Struk Tidak Ditemukan',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 )
               ],
             ),
